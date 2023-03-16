@@ -1,0 +1,77 @@
+from tkinter import *
+
+#Creating a new window and configurations
+window = Tk()
+window.title("Widget Examples")
+window.minsize(width=500, height=500)
+
+#Labels
+label = Label(text="This is old text")
+label.config(text="This is new text", font=('Arial,', 24, "bold"))
+label.pack()
+
+#Buttons
+def action():
+    n = entry.get()
+    label.config(text=f'{n}')
+
+button = Button(text="Click Me", command=action)
+button.pack()
+
+#Entry
+entry = Entry(width=30)
+entry.insert(END, string="Some text to begin with.") #Add some text to begin with
+entry.pack()
+
+#Text
+text = Text(height=2, width=33)
+text.focus() #Puts cursor in textbox.
+text.insert(END, "Example of multi-line text entry.") #Adds some text to begin with.
+text.pack()
+
+#Spinbox
+def spin_number():
+    print(spinbox.get())
+spinbox = Spinbox(from_=0, to=10, width=5, command=spin_number)
+spinbox.pack()
+
+#Scale
+def scale_use(value):
+    print(value)    
+scale = Scale(from_=0, to=100, command=scale_use)
+scale.pack()
+
+#Checkbutton
+def checkbutton_used():
+    #Prints 1 if On button checked, otherwise 0.
+    print(checked_state.get())
+
+checked_state = IntVar() #Variable to hold on to checked state, 0 is off, 1 is on.
+checkbutton = Checkbutton(text="Is On?", variable=checked_state, command=checkbutton_used)
+checked_state.get()
+checkbutton.pack()
+
+
+#Radiobutton
+def radio_used():
+    print(radio_state.get())
+
+radio_state = IntVar() #Variable to hold on to which radio button value is checked.
+radiobutton1 = Radiobutton(text="Turkey", value=1, variable=radio_state, command=radio_used)
+radiobutton2 = Radiobutton(text="Chicken", value=2, variable=radio_state, command=radio_used)
+radiobutton1.pack()
+radiobutton2.pack()
+
+
+#Listbox
+def listbox_used(event):
+    # Gets current selection from listbox
+    print(listbox.get(listbox.curselection()))
+
+listbox = Listbox(height=4)
+fruits = ["Apple", "Pear", "Orange", "Banana"]
+for item in fruits:
+    listbox.insert(fruits.index(item), item)
+listbox.bind("<<ListboxSelect>>", listbox_used)
+listbox.pack()
+window.mainloop()
