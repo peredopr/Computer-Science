@@ -1,0 +1,237 @@
+/*#####################################TAGS#####################################*/
+body {
+    margin-right: 0%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    font-weight: 100;
+    border: none;
+    background-color: #181a1b;
+    margin: 0;
+    color: gray;
+}
+
+p {
+    font-family: adobe-garamond-pro;
+    line-height: 1.5;
+}
+
+hr {
+    border-style: dotted none none;
+    color: white;
+    width: 5%;
+    border-width: 5px;
+    margin: 100px auto 100px;
+}
+
+h1 {
+    font-size: 5rem;
+    margin-top: 0;
+    color: #5ec0ab;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #5ec0ab;
+}
+
+h3 {
+    color: #5ec0ab;
+}
+
+h4 {
+    color: #5ec0ab;
+}
+/*#####################################IDs#####################################*/
+
+#hello {
+    z-index:980;
+    position:relative;
+    padding:3em 0 0;
+    margin:0 0 3em;
+}
+
+#mountain {
+    width: 800px;
+    position: relative;
+    right: 80px;
+    top: 30px;
+}
+
+#pedro {
+    position: relative;
+    right: 50px;
+    bottom: 30px;
+}
+
+/*#####################################CLASS#####################################*/
+
+.h2-skills {
+    padding-bottom: 100px;
+}
+
+.python-div {
+    width: 50%;
+    margin: auto;
+}
+
+.python-div-p{
+    text-align: left;
+}
+
+.web-div {
+    width: 50%;
+    margin: auto;
+}
+
+.web-div-p {
+    text-align: left;
+}
+
+.section {
+    margin: 100px 400px;
+}
+
+.sub-section {
+    margin: 0 0 0 200px;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    margin-left:-15px;
+    margin-right:-15px;
+}
+
+
+.top-cloud {
+    position: relative;
+    left: 400px;
+    margin-top: 100px;
+}
+
+.bottom-cloud {
+    position: relative;
+    right: 50px;
+    bottom: 300px;
+}
+
+.profile-pic {
+    margin-top: 100px;
+    width: 200px;
+}
+
+.hello-text {
+    display: block;
+    margin: auto auto 10px;
+    line-height: 30px;
+    text-size-adjust: 100%;
+    width: 30%;
+    
+}
+
+.hello {
+    margin: 0 0 100px;
+    display: block;
+}
+
+.top-container {
+    background-color: #20322e;
+}
+
+.pro {
+    text-decoration: underline;
+}
+
+
+.h3-python {
+    margin: 0 auto 0 auto;
+    text-align: left;
+}
+
+.images {
+    width: 150px;
+    float: left;
+    margin-right: 50px;
+}
+
+.images-2 {
+    width: 150px;
+    float: left;
+    margin-right: 50px;
+}
+
+.chillies-pic {
+    width: 150px;
+    float: right;
+    padding-left: 50px;
+}
+
+.programmer {
+    color: #5ec0ab;
+    font-weight: normal;
+    line-height: 2;
+}
+
+.latim {
+    width: 50%;
+    margin: auto;
+    text-align: left;
+}
+
+.bottom-container {
+    background-color: #20322e;
+    padding: 50px 0 20px;
+}
+
+a {
+    padding: auto 20px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5ec0ab;
+    margin: 10px 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #eaf6f6;
+}
+
+.c {
+    font-size: 20px;
+}
+
+.contact-me {
+    margin-bottom: 70px;
+}
+
+.contact-me-p {
+    margin-bottom: 40px;
+}
+/*#####################################BUTTON#####################################*/
+
+.btn {
+	background:linear-gradient(to bottom, #5ec0ab 5%, #173830 100%);
+	background-color:#5ec0ab;
+	border-radius:12px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #2f6627;
+}
+.btn:hover {
+	background:linear-gradient(to bottom, #173830 5%, #5ec0ab 100%);
+	background-color:#173830;
+}
+.btn:active {
+	position:relative;
+	top:1px;
+}
